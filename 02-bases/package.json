@@ -9,5 +9,9 @@
     "dev": "bun --watch src/app.js"
   },
   "author": "Leonardo Omaña",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "get-age": "^1.0.1",
+    "uuid": "^9.0.1"
+  }
 }
