@@ -5,7 +5,13 @@
 // const { buildMakePerson } = require('./js-foundation/05-factory')
 // import { getUserById } from './js-foundation/03-callbacks'
 // const { getUserById } = require('./js-foundation/03-callbacks')
-const getPokemonById = require('./js-foundation/06-promises')
+// const getPokemonById = require('./js-foundation/06-promises')
+const { buildLogger } = require('./plugins')
+
+const logger = buildLogger('app.js')
+
+logger.log('Hello from app.js')
+logger.error('This is some wrong stuff')
 
 // const id = 2
 
@@ -27,7 +33,7 @@ const getPokemonById = require('./js-foundation/06-promises')
 
 // console.log({ john })
 
-getPokemonById(1)
-  .then(pokemon => console.log({ pokemon }))
-  .catch(error => console.log(error))
-  .finally(() => console.log('Done!'))
+// getPokemonById(1)
+//   .then(pokemon => console.log({ pokemon }))
+//   .catch(error => console.log(error))
+//   .finally(() => console.log('Done!'))
