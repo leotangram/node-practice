@@ -6,8 +6,8 @@ FN:3,get
 FN:4,get
 FNF:4
 FNH:1
-FNDA:3,get
 FNDA:0,get
+FNDA:1,get
 FNDA:0,get
 FNDA:0,get
 DA:1,1
@@ -16,7 +16,7 @@ DA:3,1
 DA:4,1
 LF:4
 LH:4
-BRDA:1,0,0,3
+BRDA:2,0,0,1
 BRF:1
 BRH:1
 end_of_record
