@@ -1,29 +1,12 @@
-const { mkdirSync, writeFileSync } = require('fs')
+import { yarg } from './config/plugins/args.plugin'
 
-let outputMessage = ''
-const base = 5
-const headerMessage = `
-==================
-   Table ${base}
-==================\n
-`
+// console.log(process.argv)
 
-for (let i = 1; i <= 10; i++) {
-  outputMessage += `${base} x ${i} = ${base * i}\n`
+// console.log(yarg)
+;(async () => {
+  await main()
+})()
+
+async function main() {
+  console.log(yarg)
 }
-
-outputMessage = headerMessage + outputMessage
-
-console.log(outputMessage)
-
-const outputPath = `outputs`
-
-mkdirSync(outputPath, { recursive: true })
-
-writeFileSync(
-  `${outputPath}/table-${base}.txt`,
-  outputMessage,
-  (error: any) => {
-    if (error) throw error
-  }
-)
